@@ -23,7 +23,8 @@
       <h5>Activity Type: {{ booking.activity_type }}</h5>
       <p>Booking Date: {{ booking.booking_date }}</p>
       <p>Number in Group: {{ booking.total_no_group }}</p>
-      <p>Date of Booking: {{ booking.creation_date }}</p>   
+      <p>Date of Booking: {{ booking.creation_date }}</p>
+      <p>Date of Booking: {{ booking.id }}</p> 
       
     </div>
   </div>
@@ -31,14 +32,15 @@
 
   <div class="row">
     <div class="col-md-8 mt-3 info mb-3 offset-md-2">
-      <h5>Contact Name: {{ booking.contact_name }} <span class="btn btn-secondary btn-sm disabled">Waiting Confirmation/Payment</span>
+      <h5 class="gap">Contact Name: {{ booking.contact_name }} <span class="btn btn-secondary btn-sm disabled">Waiting Confirmation/Payment</span>
       <h5>Activity Type: {{ booking.activity_type }}</h5>
       <p>Booking Date: {{ booking.booking_date }}</p>     
       <p>Number in Group: {{ booking.total_no_group }}</p>      
       <p>Date of Booking: {{ booking.creation_date }}</p>
+      <p>Booking ID: {{ booking.id }}</p> 
       </h5>
 <div class="mb-3">
-      <a href="/delete/{{ booking.id }}" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</a> 
+      <a href="" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</a> 
       
       <a href="/edit_booking/{{ booking.id }}" class="btn btn-primary">Update</a>
     </div>

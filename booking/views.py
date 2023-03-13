@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 from django.views.generic import TemplateView
 from .forms import BookingForm
@@ -19,7 +19,7 @@ def make_booking(request):
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('my_account')
     else:
         form = BookingForm()
     return render(request, 'make_booking.html', {'form': form})
@@ -27,9 +27,36 @@ def make_booking(request):
 
 @login_required
 def view_booking(request):
-   
+
     bookings = request.user.bookings.all()
     context = {
         'bookings': bookings,
     }
-    return render(request, 'my_account.html', context) 
+    return render(request, 'my_account.html', context)
+
+
+@login_required
+def edit_booking(request, booking_id):
+    try:
+        booking = get_object_or_404(Booking, id=booking_id)
+        if request.method == 'POST':
+            form = BookingForm(request.POST, instance=booking)
+            if form.is_valid():
+                form.save()
+                return redirect('my_account')
+        else:
+            form = BookingForm(instance=booking)
+        context = {
+                 'form': form
+        }
+        return render(request, 'edit_booking.html', context)
+
+    except Http404 as err:
+        return redirect('my_account')
+
+
+@login_required
+def delete_booking(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id)
+    booking.delete()
+    return redirect('my_account')

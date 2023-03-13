@@ -46,3 +46,7 @@ ul {
      height: 280px;
      border: 1px solid black; 
 }
+
+.gap {
+    padding: 3px;
+}
