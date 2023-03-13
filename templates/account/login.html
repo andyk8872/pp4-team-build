@@ -12,7 +12,7 @@
     <div class="col-md-8 mt-3 offset-md-2">
       <h3 class="text-primary">{% trans "Sign In" %}</h3>
 
-      <p>{% blocktrans %}Welcome back to <span class="brand">TEAM | BUILD.</span>To make a booking or to see your
+      <p class="white">{% blocktrans %}Welcome back to <span class="brand">TEAM | BUILD.</span>To make a booking or to see your
         bookings, please log in. If you
         have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
         first.{% endblocktrans %}</p>
@@ -20,7 +20,7 @@
   </div>
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
-      <form class="login" method="POST" action="{% url 'account_login' %}">
+      <form class="login white" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form.as_p }}
         {% if redirect_field_value %}
