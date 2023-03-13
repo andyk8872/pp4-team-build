@@ -23,3 +23,13 @@ def make_booking(request):
     else:
         form = BookingForm()
     return render(request, 'make_booking.html', {'form': form})
+
+
+@login_required
+def view_booking(request):
+   
+    bookings = request.user.bookings.all()
+    context = {
+        'bookings': bookings,
+    }
+    return render(request, 'my_account.html', context) 

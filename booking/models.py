@@ -41,7 +41,7 @@ class Booking(models.Model):
         auto_now_add=True)
 
     total_no_group = models.IntegerField(
-        verbose_name=('No. in Group(Min 10, Max = 30)'),
+        verbose_name=('No. in Group (Min 10, Max = 30)'),
         default=10,
         validators=[
             MaxValueValidator(30),
