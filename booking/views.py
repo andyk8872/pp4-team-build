@@ -5,6 +5,7 @@ from .forms import BookingForm
 from .models import Booking
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 
 class HomePage(TemplateView):
@@ -19,6 +20,8 @@ def make_booking(request):
         form = BookingForm(request.POST, instance=booking)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Booking successful.\
+                 Please allow up to 24 hours to finalise details/payment.')
             return redirect('my_account')
     else:
         form = BookingForm()
@@ -43,6 +46,8 @@ def edit_booking(request, booking_id):
             form = BookingForm(request.POST, instance=booking)
             if form.is_valid():
                 form.save()
+                messages.success(request, 'Update successful.\
+                 Please allow up to 24 hours to finalise details/payment.')
                 return redirect('my_account')
         else:
             form = BookingForm(instance=booking)

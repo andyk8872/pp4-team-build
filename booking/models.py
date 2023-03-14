@@ -12,7 +12,7 @@ class Booking(models.Model):
     ACTIVITY_LIST = (
         ('Team Building Workshop', 'Team Building Workshop'),
         ('Carnival Team Challenge', 'Carnival Team Challenge'),
-        ('Bridge Building Challeng', 'Bridge Building Challenge'),
+        ('Bridge Building Challenge', 'Bridge Building Challenge'),
     )
 
     user = models.ForeignKey(

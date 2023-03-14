@@ -7,7 +7,7 @@
 
 {% if not bookings %}
 
-<h2 class="text-center">You have no bookings</h2>
+<h2 class="text-center text-white">You have no bookings</h2>
 
 {% else %}
 
@@ -40,7 +40,8 @@
       <p>Booking ID: {{ booking.id }}</p> 
       </h5>
 <div class="mb-3">
-      <a href="" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</a> 
+      <a href="/delete/{{ booking.id }}" class="btn btn-danger">Delete</a>
+      <!-- <a href="" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</a>  -->
       
       <a href="/edit_booking/{{ booking.id }}" class="btn btn-primary">Update</a>
     </div>
