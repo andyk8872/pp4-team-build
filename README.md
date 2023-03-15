@@ -1,15 +1,17 @@
 ## [Table of Contents](#table-of-contents)
 * [Purpose](#purpose)
- * [User Experience Design (UX)](#user-experience-design)
-  * [User stories](#user-stories)
-    * [Site Users](#site-users)
-    * [Returning Visitor Goals](#returning-visitor-goals)
-    * [Frequent Visitor Goals](#frequent-visitor-goals)
-  * [Structure](#structure)  
-  * [Design](#design)
-    * [Colour Scheme](#color-scheme)
-    * [Typography](#typography)    
-    * [Wireframes](#wireframes)
+* [User Experience Design (UX)](#user-experience-design)
+* [User stories](#user-stories)
+  * [Site Users](#site-users)
+  * [Returning Visitor Goals](#returning-visitor-goals)
+  * [Frequent Visitor Goals](#frequent-visitor-goals)
+* [Agile Methodology](#agile-methodology)     
+* [Design](#design)
+  * [Wireframes](#wireframes)
+  * [Colour Scheme](#color-scheme)
+  * [Typography](#typography)    
+  
+* [Structure](#structure) 
 * [Features](#features)    
 * [Technologies](#technologies)
 * [Testing](#testing)
@@ -80,10 +82,39 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 
 ### Github Project Board
 
-Although not specially designed for this the project board in github works well enabling me to track my user stories. 
+* Although not specially designed for this the project board in github works well enabling me to track my user stories.
+* This enabled me to manage the project by breaking it up into several phases.
+*  Once the project had started it allowed me to cycle through the process to planning, executing and evaluating. 
 
 ### Project Board/User Stories:
 <details><summary>User Stories:</summary>
-* These are the user stories in the project board.
+
 <img src="static/images/agile1.png">
+<img src="static/images/agile2.png">
+<img src="static/images/agile3.png">
+<img src="static/images/agile4.png">
+<img src="static/images/agile5.png">
+<img src="static/images/agile6.png">
 </details>
+<br/>
+
+* [Back to contents](#table-of-contents)
+***
+
+### Wireframes:
+<details><summary>Desktop-Wireframes</summary><br/>
+* This is the 'home page' design in the desktop.<br/>
+<img src="static/images/home_page.png"><br/>
+* This is the 'contact page' design in the desktop.<br/>
+<img src="static/images/contact_page.png"><br/>
+</details>
+
+<details><summary>Mobile-Wireframes</summary>
+* This is the 'home page' design in the mobile.<br/>
+<img src="static/images/mobile_home.png"><br/>
+* This is the 'contact page' design in the desktop.<br/>
+<img src="static/images/contact_mobile.png">
+</details>
+
+* [Back to contents](#table-of-contents)
+***
