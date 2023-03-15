@@ -9,9 +9,9 @@
 * [Design](#design)
   * [Wireframes](#wireframes)
   * [Colour Scheme](#color-scheme)
-  * [Typography](#typography)    
-  
-* [Structure](#structure) 
+  * [Typography](#typography)
+* [Structure](#structure)
+  * [Logic](#logic)
 * [Features](#features)    
 * [Technologies](#technologies)
 * [Testing](#testing)
@@ -100,7 +100,7 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 
 * [Back to contents](#table-of-contents)
 ***
-
+## Design
 ### Wireframes:
 <details><summary>Desktop-Wireframes</summary><br/>
 * This is the 'home page' design in the desktop.<br/>
@@ -115,6 +115,37 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 * This is the 'contact page' design in the desktop.<br/>
 <img src="static/images/contact_mobile.png">
 </details>
+
+* [Back to contents](#table-of-contents)
+***
+
+## Structure
+### Schema
+### Logic
+### ERD (diagrams)
+
+* [Back to contents](#table-of-contents)
+***
+
+## Features
+
+* [Back to contents](#table-of-contents)
+***
+
+## Technogies Used
+
+* [Back to contents](#table-of-contents)
+***
+## Testing
+
+* [Back to contents](#table-of-contents)
+***
+## Deployment
+
+* [Back to contents](#table-of-contents)
+***
+
+## Acknowledgements
 
 * [Back to contents](#table-of-contents)
 ***
