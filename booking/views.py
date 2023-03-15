@@ -46,8 +46,9 @@ def edit_booking(request, booking_id):
             form = BookingForm(request.POST, instance=booking)
             if form.is_valid():
                 form.save()
-                messages.success(request, 'Update successful.\
-                 Please allow up to 24 hours to finalise details/payment.')
+                messages.success(request, 'Update successful..\
+                 We will follow up within 24 hours to finalise details &\
+                     payment.')
                 return redirect('my_account')
         else:
             form = BookingForm(instance=booking)
@@ -60,8 +61,21 @@ def edit_booking(request, booking_id):
         return redirect('my_account')
 
 
+# @login_required
+# def delete_booking(request, booking_id):
+#     booking = get_object_or_404(Booking, id=booking_id)
+#     booking.delete()
+#     return redirect('my_account')
+
+
 @login_required
 def delete_booking(request, booking_id):
-    booking = get_object_or_404(Booking, id=booking_id)
-    booking.delete()
-    return redirect('my_account')
+    item = get_object_or_404(Booking, id=booking_id)
+    if request.method == 'POST':
+        item.delete()
+        messages.success(request, 'Booking delete successful..')
+        return redirect('my_account')
+    context = {
+        "booking": item
+    }    
+    return render(request, "delete_items.html", context)

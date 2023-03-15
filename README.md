@@ -1,108 +1,89 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## [Table of Contents](#table-of-contents)
+* [Purpose](#purpose)
+ * [User Experience Design (UX)](#user-experience-design)
+  * [User stories](#user-stories)
+    * [Site Users](#site-users)
+    * [Returning Visitor Goals](#returning-visitor-goals)
+    * [Frequent Visitor Goals](#frequent-visitor-goals)
+  * [Structure](#structure)  
+  * [Design](#design)
+    * [Colour Scheme](#color-scheme)
+    * [Typography](#typography)    
+    * [Wireframes](#wireframes)
+* [Features](#features)    
+* [Technologies](#technologies)
+* [Testing](#testing)
+  * [Manual Testing](#manual-testing)
+  * [Bugs](#bugs)
+* [Deployment](#deployment)
+* [Credits](#credits)
+   * [Code and Tutorials](#code-and-tutorials)
+* [Acknoledgements](#acknowledgements)   
+    
 
-Welcome andyk8872,
+# TEAM | BUILD BOOKING SITE
+## Purpose:
+### Goal:
+#### To allow individuals and organisations a place to book a 'Team Building' exercise for themselves and their organisation.
+#### To provide a visual and interactive that the user will be able to fulfil their objectives.
+This is a booking application for 'Team Building' exercises. It is a site where you and your team can book a day on one of the various team building activities. 
+The company will then confirm your booking or call to get additional details and arrange payment.
+The application was created with a real need in mind.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### Business Goals:
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The main goal of this project is to give a user the ability to make bookings. User should also should also be able to make updates to their account in via their account.
 
-## Gitpod Reminders
+### Target Audience:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The target audience are organisations who have group/groups that they feel would benefit from taking time out and learning to work in collaboration to solve various challenges.
 
-`python3 -m http.server`
+* [Back to contents](#table-of-contents)
 
-A blue button should appear to click: _Make Public_,
+The live website can be found [here](https://andyk8872.github.io/project-2/).
 
-Another blue button should appear to click: _Open Browser_.
+## TEAM | BUILD  Responsive Website View
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+![Website Mock Up](docs/responsive.png)
 
-A blue button should appear to click: _Make Public_,
+* [Back to contents](#table-of-contents)
+*** 
+## User Experience Design
 
-Another blue button should appear to click: _Open Browser_.
+### User stories
+#### Site Users
+* As a First Time user, I want to easily understand the main purpose of the site.
+* As a first time user, I want to be able to play the game and participate in the experience.
+* As a First Time user, I want to view the website and content clearly on my mobile device.
+* As a Firt Time user, I want to find to be able to contact the site owners.
+* As a user I can have the ability to request a callback before the visit so that I can give more information and receive information.
+* As a user I can cancel my booking if I don't need it anymore.
+* As a user I can edit my booking so that I can change time or give more information.
+* As a user I can create an account so that I can see my bookings.
+* As a user I can have confirmation checks in relation to deletion of my bookings.
+* As a user I can see the various activity options to choose from.
+#### Returning Visitor Goals
+* As a Returning user, I want to enjoy the experience and the interactive options .
+* As a Returning user, I want to contact the site owners so I can share my experience.
+#### Frequent Visitor Goals
+* As a Frequent user, I want to check to see if there are any changes.
+* As a Frequent user, I want to check to see if there are any new updates.
+#### Staff Memmber
+* As a admin I can see what times have been booked so that I can plan my work.
+* As a admin I can have contact details in relation to the customer.
+* As a admin I can have the ability to confirm bookings.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* [Back to contents](#table-of-contents)
+***
 
-To log into the Heroku toolbelt CLI:
+## Agile Methodology
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Github Project Board
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Although not specially designed for this the project board in github works well enabling me to track my user stories. 
 
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### Project Board/User Stories:
+<details><summary>User Stories:</summary>
+* These are the user stories in the project board.
+<img src="static/images/agile1.png">
+</details>
