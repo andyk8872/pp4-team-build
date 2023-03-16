@@ -12,6 +12,10 @@ class HomePage(TemplateView):
     template_name = "index.html"
 
 
+class ContactPage(TemplateView):
+    template_name = "contact.html"
+
+
 @login_required
 def make_booking(request):
 
@@ -59,13 +63,6 @@ def edit_booking(request, booking_id):
 
     except Http404 as err:
         return redirect('my_account')
-
-
-# @login_required
-# def delete_booking(request, booking_id):
-#     booking = get_object_or_404(Booking, id=booking_id)
-#     booking.delete()
-#     return redirect('my_account')
 
 
 @login_required

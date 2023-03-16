@@ -1,5 +1,5 @@
 body {
-    background-color: #0a1172;
+    background-color: #1260cc;
 }
 
 h1 {
@@ -49,4 +49,9 @@ ul {
 
 .gap {
     padding: 3px;
+}
+
+/* forms */
+.bg-form {
+    background-color: #d4d4d4;
 }

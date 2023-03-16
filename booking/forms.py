@@ -28,3 +28,9 @@ class BookingForm(forms.ModelForm):
                 'required': True,
             })
                 }
+
+
+class ContactForm(forms.Form):
+    name = forms.CharField(max_length=255)
+    email = forms.EmailField()
+    content = forms.CharField(widget=forms.Textarea)
