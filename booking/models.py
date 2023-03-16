@@ -67,3 +67,27 @@ class Booking(models.Model):
 
     def __str__(self):
         return (str(self.user))
+
+
+class Review(models.Model):
+
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        verbose_name=_('User name'),
+        related_name='review',
+        blank=True, null=True)
+
+    creation_date = models.DateTimeField(
+        verbose_name=_('Creation date'),
+        auto_now_add=True)
+
+    review = models.TextField(default='Leave review...')    
+
+    approved = models.BooleanField(default=False)
+
+    class Meta:
+        ordering: ['created_on']
+
+    def __str__(self):
+        return f"Review {self.review} by {self.user}."

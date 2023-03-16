@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 from django.views.generic import TemplateView
-from .forms import BookingForm
-from .models import Booking
+from .forms import BookingForm, ContactForm, ReviewForm
+from .models import Booking, Review
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
@@ -76,3 +76,36 @@ def delete_booking(request, booking_id):
         "booking": item
     }    
     return render(request, "delete_items.html", context)
+
+
+@login_required
+def make_review(request):
+    """
+    Displays the review form is user is authorised.
+    """
+    if request.method == 'POST':
+        review = Review(user=request.user)
+        form = ReviewForm(request.POST, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.success(
+                request, 'Review posted. Wait for approval.'
+                )
+            return redirect('make_review')
+
+    else:
+        form = ReviewForm()
+        context = {
+            'form': form,
+            'posted': True
+            }
+    return render(request, 'make_review.html', context)
+
+
+def show_review(request):
+    reviews = Review.objects.all()
+    context = {
+        'reviews': reviews,
+    }
+    return render(request, 'show_review.html', context)
+   

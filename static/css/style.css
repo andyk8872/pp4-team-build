@@ -2,10 +2,10 @@ body {
     background-color: #1260cc;
 }
 
-h1 {
+h1, .display-1 {
     font-family: 'Anton', sans-serif;
     text-align: center;
-    color: #009ed3;
+    color: #ffff00;
     letter-spacing: 5px;    
 }
 
@@ -13,8 +13,12 @@ h1 {
     color: #fff;
 }
 
-.brand {
+/* .brand {
     color: #009ed3;
+} */
+
+.brand {
+    color: black;
 }
 
 ul {

@@ -1,4 +1,4 @@
-from .models import Booking
+from .models import Booking, Review
 from django import forms
 import datetime
 
@@ -34,3 +34,10 @@ class ContactForm(forms.Form):
     name = forms.CharField(max_length=255)
     email = forms.EmailField()
     content = forms.CharField(widget=forms.Textarea)
+
+
+class ReviewForm(forms.ModelForm):
+
+    class Meta:
+        model = Review
+        fields = ('review',)
