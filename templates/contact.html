@@ -10,11 +10,18 @@
         <div class="col-md-4 mt-3 mb-3 offset-md-4">
             <form method="post" action="." style="margin-top: 1.3em;">
                 {{ form | crispy }}
-                {% csrf_token %}             
+                {% csrf_token %}
                 <br>
                 <button type="submit" class="btn btn-primary btn-signup btn-lg">Submit</button>
             </form>
         </div>
+    </div>
+</div>
+
+<!-- location map -->
+<div class="row">
+    <div class="col-md-4 mt-3 mb-3 offset-md-4">
+        <div id="map"></div>
     </div>
 </div>
 

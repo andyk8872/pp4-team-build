@@ -88,13 +88,15 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 
 ### Project Board/User Stories:
 <details><summary>User Stories:</summary>
-
+<img src="static/images/full_user_stories.png">
 <img src="static/images/agile1.png">
 <img src="static/images/agile2.png">
 <img src="static/images/agile3.png">
 <img src="static/images/agile4.png">
 <img src="static/images/agile5.png">
 <img src="static/images/agile6.png">
+<img src="static/images/reviews.png">
+<img src="static/images/contact.png">
 </details>
 <br/>
 
@@ -126,8 +128,25 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 
 * [Back to contents](#table-of-contents)
 ***
+***
 
 ## Features
+### Contact Option: 
+#### The Contact option alows the user to contact the site owners.
+#### This is achieved through the backend.
+#### An Email delivery system platform (Mailtrap) is being used.
+
+* This is the Contact Page.<br/>
+![Contact Page](static/images/contact_feature.png)<br>
+* This is the email sent to 'Mailtrap'.<br/>
+![Email](static/images/email.png)<br>
+***
+
+### Footer
+* The footer consists of two parts.
+1. The social media links.
+2. The copyright (using javascript for the current year) and a link to my Github page.
+ ![Footer](static/images/footer.png)<br>
 
 * [Back to contents](#table-of-contents)
 ***
