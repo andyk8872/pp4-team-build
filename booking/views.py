@@ -12,10 +12,6 @@ class HomePage(TemplateView):
     template_name = "index.html"
 
 
-class ContactPage(TemplateView):
-    template_name = "contact.html"
-
-
 @login_required
 def make_booking(request):
 
@@ -74,7 +70,7 @@ def delete_booking(request, booking_id):
         return redirect('my_account')
     context = {
         "booking": item
-    }    
+    }
     return render(request, "delete_items.html", context)
 
 
@@ -108,4 +104,11 @@ def show_review(request):
         'reviews': reviews,
     }
     return render(request, 'show_review.html', context)
-   
+
+
+def contact(request):
+    form = ContactForm()
+
+    return render(request, 'contact.html', {
+        'form': form 
+    })
