@@ -82,7 +82,7 @@ class Review(models.Model):
         verbose_name=_('Creation date'),
         auto_now_add=True)
 
-    review = models.TextField(default='Leave review...')    
+    review = models.TextField(default='', blank=True)
 
     approved = models.BooleanField(default=False)
 
