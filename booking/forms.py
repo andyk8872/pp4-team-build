@@ -14,6 +14,7 @@ class BookingForm(forms.ModelForm):
         model = Booking
         fields = ('contact_name',
                   'email',
+                  'phone',
                   'total_no_group',
                   'activity_type',
                   'booking_date',)
