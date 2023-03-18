@@ -12,7 +12,18 @@
   * [Typography](#typography)
 * [Structure](#structure)
   * [Logic](#logic)
-* [Features](#features)    
+* [Features](#features)
+  * [Home Page](#home-page)
+  * [Navigation](#navigation)
+  * [Footer](#footer)
+  * [Login/Logout/Register](#login-logout-register)  
+  * [Make Booking](#make-booking)
+  * [Delete Booking](#delete-booking)
+  * [Edit Booking](#edit-booking)
+  * [View Booking](#view-booking)
+  * [Contact](#contact)
+  * [Make Review](#make-review)
+  * [View Review](#view-review)
 * [Technologies](#technologies)
 * [Testing](#testing)
   * [Manual Testing](#manual-testing)
@@ -128,20 +139,19 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 
 * [Back to contents](#table-of-contents)
 ***
-***
 
 ## Features
-### Contact Option: 
-#### The Contact option alows the user to contact the site owners.
-#### This is achieved through the backend.
-#### An Email delivery system platform (Mailtrap) is being used.
 
-* This is the Contact Page.<br/>
-![Contact Page](static/images/contact_feature.png)<br>
-* This is the email sent to 'Mailtrap'.<br/>
-![Email](static/images/email.png)<br>
+### Home Page
+* The Home Page describes the site as a booking site and shows the three workshop challenges on offer.
+![HomePage](static/images/homepage.png)<br>
 ***
 
+### Navigation
+* The Navigation bar gives the user the options/links in order to navigate the site and who is logged on if anyone.. 
+![Navigation](static/images/navigation.png)<br>
+
+***
 ### Footer
 * The footer consists of two parts.
 1. The social media links.
@@ -150,6 +160,61 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 
 * [Back to contents](#table-of-contents)
 ***
+### Login Logout Register
+* The user can login, login and register with the site here.
+![Login](static/images/footer.png)<br>
+![Logout](static/images/footer.png)<br>
+![Register](static/images/footer.png)<br>
+
+* [Back to contents](#table-of-contents)
+***
+### Make Booking
+* This function allows the user to make a booking.
+![Make Booking](static/images/make_booking.png)<br>
+
+* [Back to contents](#table-of-contents)
+***
+### Delete Booking
+* This function allows the user to delete a booking.<br>
+![Delete Booking](static/images/delete_booking.png)<br>
+
+* [Back to contents](#table-of-contents)
+***
+### Edit Booking
+* This function allows the user to edit a booking.<br>
+![Edit Booking](static/images/edit_booking.png)<br>
+
+* [Back to contents](#table-of-contents)
+***
+### View Booking
+* This function allows the user to view a booking.<br>
+![View Booking](static/images/view_booking.png)<br>
+
+* [Back to contents](#table-of-contents)
+***
+### Make Review
+* This function allows the user to make a review.<br>
+![Make Recview](static/images/make_review.png)<br>
+
+* [Back to contents](#table-of-contents)
+***
+### View Review
+* This function allows the user to view a review.<br>
+![View Review](static/images/view_review.png)<br>
+
+* [Back to contents](#table-of-contents)
+***
+### Contact 
+* The Contact option alows the user to contact the site owners.
+* This is achieved through the backend.
+* An Email delivery system platform (Mailtrap) is being used.
+
+* This is the Contact Page.<br/>
+![Contact Page](static/images/contact_feature.png)<br>
+* This is the email sent to 'Mailtrap'.<br/>
+![Email](static/images/email.png)<br>
+***
+
 
 ## Technogies Used
 
