@@ -1,5 +1,5 @@
 body {
-    background-color: #1260cc;
+    background-color: #1e90ff;
 }
 
 h1, .display-1 {
@@ -59,3 +59,12 @@ ul {
 .bg-form {
     background-color: #d4d4d4;
 }
+
+@media screen and (min-width: 576px) {
+
+    .max_width {
+        max-width: 50%;
+    }
+  
+  }
+

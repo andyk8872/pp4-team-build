@@ -120,7 +120,9 @@ def contact(request):
                 'email': email,
                 'content': content
             })
-            send_mail('The contact form subject ', 'This is the message', 'noreply@gmail.com', ['andrewkennedy35@yahoo.ie'], html_message=html)
+            send_mail('The contact form subject ', 'This is the \
+                message', 'noreply@gmail\
+                    .com', ['andrewkennedy35@yahoo.ie'], html_message=html)
             messages.success(request, 'Message sent..')
             return redirect('contact')
     else:
