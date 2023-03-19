@@ -36,7 +36,7 @@ class Booking(models.Model):
         max_length=256,
         blank=True)
 
-    creation_date = models.DateTimeField(
+    creation_date = models.DateField(
         verbose_name=_('Creation date'),
         auto_now_add=True)
 
@@ -78,7 +78,7 @@ class Review(models.Model):
         related_name='review',
         blank=True, null=True)
 
-    creation_date = models.DateTimeField(
+    creation_date = models.DateField(
         verbose_name=_('Creation date'),
         auto_now_add=True)
 
