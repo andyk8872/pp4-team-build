@@ -120,6 +120,10 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 <img src="static/images/home_page.png"><br/>
 * This is the 'contact page' design in the desktop.<br/>
 <img src="static/images/contact_page.png"><br/>
+* This is the 'form' design.<br/>
+<img src="static/images/forms_wireframes.png"><br/>
+* This is the 'reviews/my-bookings' design.<br/>
+<img src="static/images/my_bookings.png"><br/>
 </details>
 
 <details><summary>Mobile-Wireframes</summary>
@@ -128,6 +132,13 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 * This is the 'contact page' design in the desktop.<br/>
 <img src="static/images/contact_mobile.png">
 </details>
+
+### Color Scheme:
+The colors were chosen to complement each other as well as provide accessiblity.<br>
+ ![Color Palete](docs/palete.png)
+
+### Typography:
+The Indie Flower and the Inknut Antiqua font are used throughout..
 
 * [Back to contents](#table-of-contents)
 ***
@@ -161,10 +172,10 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 * [Back to contents](#table-of-contents)
 ***
 ### Login Logout Register
-* The user can login, login and register with the site here.
-![Login](static/images/footer.png)<br>
-![Logout](static/images/footer.png)<br>
-![Register](static/images/footer.png)<br>
+* The user can login, login and register with the site here.<br>
+![Login](static/images/login.png)<br>
+![Logout](static/images/logout.png)<br>
+![Register](static/images/register.png)<br>
 
 * [Back to contents](#table-of-contents)
 ***
