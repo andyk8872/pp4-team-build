@@ -101,7 +101,7 @@ def make_review(request):
 
 
 def show_review(request):
-    reviews = Review.objects.all()
+    reviews = Review.objects.all().order_by('-creation_date')
     context = {
         'reviews': reviews,
     }

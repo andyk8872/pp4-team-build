@@ -78,7 +78,7 @@ class Review(models.Model):
         related_name='review',
         blank=True, null=True)
 
-    creation_date = models.DateField(
+    creation_date = models.DateTimeField(
         verbose_name=_('Creation date'),
         auto_now_add=True)
 
@@ -87,7 +87,7 @@ class Review(models.Model):
     approved = models.BooleanField(default=False)
 
     class Meta:
-        ordering: ['-creation_dateS',]
+        ordering: ['-creation_date',]
 
     def __str__(self):
         return f"Review {self.review} by {self.user}."
