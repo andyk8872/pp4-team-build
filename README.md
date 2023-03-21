@@ -24,9 +24,12 @@
   * [Contact](#contact)
   * [Make Review](#make-review)
   * [View Review](#view-review)
-* [Technologies](#technologies)
+* [Technologies Used](#technologies-used)
+* [Libraries](#libraries)
+* [Security and Authentification](#security-and-authentification)
 * [Testing](#testing)
   * [Manual Testing](#manual-testing)
+    
   * [Bugs](#bugs)
 * [Deployment](#deployment)
 * [Credits](#credits)
@@ -227,13 +230,119 @@ The Indie Flower and the Inknut Antiqua font are used throughout..
 ***
 
 
-## Technogies Used
+## Technologies Used
+* [Django](https://www.djangoproject.com/) - A high level Python web framework.
+* [Bootstrap](https://getbootstrap.com/) - A CSS free open source framework used for the front end development.
+* [HTML5](https://en.wikipedia.org/wiki/HTML) - A markup language that describes the structure of the web page.
+* [CSS3](https://en.wikipedia.org/wiki/CSS) - Provides the styling for the website.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - Provides interactive elements of the website
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) - An interpreted, object-oriented language with dynamic semantics.
+* [Gitpod](https://gitpod.io/) - Used to create and edit the website.
+* [GitHub](https://github.com/) - Used to host the repository.
+* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used to test responsiveness of web pages and debug.
+* [Balsamiq](https://balsamiq.com/) - Used to create the wireframes for the project.
+* [Heroku](https://dashboard.heroku.com) - Used to deploy the website.
+* [PEP8 Validation](http://pep8online.com/) - Used to validate Python code.
+* [HTML Validation](https://validator.w3.org/) - Used to validate HTML code.
+* [CSS Validation](https://jigsaw.w3.org/css-validator/) - Used to validate CSS code.
+* [JSHint Validation](https://jshint.com/) - Used to validate JavaScript code.
+* [drawSQL](https://drawsql.app/) - Used to draw the database schema.
+* [Mailtrap](mailtrap.com) - A mail service used for to hold/store the users details and message when using the contact form.
+* [Leaflet Maps](https://leaflet.js/) - Used to produce a map of the location.
+
+* [Back to contents](#table-of-contents)
+***
+## Libraries
+This is a list of libraries used in the project.
+
+* asgiref==3.6.0
+* cloudinary==1.32.0
+* dj-database-url==0.5.0
+* dj3-cloudinary-storage==0.0.6
+* Django==3.2.18
+* django-allauth==0.52.0
+* django-crispy-forms==1.14.0
+* gunicorn==20.1.0
+* oauthlib==3.2.2
+* psycopg2==2.9.5
+* PyJWT==2.6.0
+* python3-openid==3.2.0
+* pytz==2022.7.1
+* requests-oauthlib==1.3.1
+* sqlparse==0.4.3
+
+* [Back to contents](#table-of-contents)
+***
+
+### Security and Authentification
+### User authentication
+
+* Django's all auth was used for login and sign up functionality.
+* Django's superuser is used to limit access to admin panel.
+
+### Form Validation
+
+Extensive form validation is used on front end as well as backend.
+
+### Database Security
+
+All secret keys connecting the database and email (Mailtrap) are stored in a env.py file that is never pushed to github. Furthermore, Cross-Site Request Forgery (CSFR) tokens were used on all forms throughout the project.
+
 
 * [Back to contents](#table-of-contents)
 ***
 ## Testing
+### Lighthouse Tests.<br>
+* The preformance percentage was reduced to 92% when the Leaflet Map was not on the page and base.html was looking for it.<br>
+![Lighthouse](static/images/lighthouse_contact.png)<br>
 
+### HTML
+* The errors shown were corrected as can be seen.
+![HTML](static/images/html.png)<br>
+### CSS
+* The CSS validatior showed no errors.<br>
+![CSS](static/images/css_test.png)<br>
+### Javascript
+* There were no tests to preform on the two javascript functions.
+1. The first is simply a function to retrieve the current year.
+2. The second is a function to retrieve a specific location on a map.
+
+### Python
+* PEP8 Style guide was used for all python code.
+* All whitespaces, missing newlines and missing docstrings errors were rectified.
+
+***
+
+## Manual Testing
+### Site Navigation
+
+* The site navigation was tested on all sizes via Google Chrome Dev Tools.<br>
+![Navigation](static/images/navigation.png)<br>
+![Footer](static/images/footer.png)<br>
 * [Back to contents](#table-of-contents)
+
+### Login/Logout/Register
+* These were all created with 'allauth'.
+
+### Make Booking
+* This is the form to make the initial booking.<br>
+![Make Booking](static/images/bookingm.png)<br>
+
+### Update Booking
+* The form to update the booking is the same as the booking form.<br>
+
+### Delete Booking
+* This is option to delete the booking.<br>
+![Make Booking](static/images/deletem.png)<br>
+
+### Contact
+* This is a contact form to contact the site owner.<br>
+![Contact](static/images/contactm.png)<br>
+
+### Review
+* This is a review form to pot your opinion.<br>
+![Contact](static/images/reviewm.png)<br>
+
 ***
 ## Deployment
 
