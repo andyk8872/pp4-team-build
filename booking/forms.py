@@ -25,6 +25,8 @@ class BookingForm(forms.ModelForm):
                 'max': datetime.date.today()+datetime.timedelta(days=60)}),
             'email': forms.EmailInput(attrs={
                 'required': True}),
+            'phone': forms.TextInput(attrs={
+                'required': True}),
             'contact_name': forms.TextInput(attrs={
                 'required': True,
             })
@@ -42,3 +44,9 @@ class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
         fields = ('review',)
+
+        widgets = {
+            'review': forms.Textarea(attrs={
+                'required': True,
+            })
+                }
