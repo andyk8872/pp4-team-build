@@ -3,6 +3,13 @@
 {% block content %}
 
 <p class="display-1 mt-5">Reviews</p>
+
+{% if not reviews %}
+
+<h2 class="text-center text-white">You have no reviews</h2>
+
+{% else %}
+
 <div class="card-deck text-center">
 
   {% for review in reviews %}
@@ -19,4 +26,7 @@
 
   {% endfor %}
 </div>
+
+{% endif %}
+
 {%endblock%}

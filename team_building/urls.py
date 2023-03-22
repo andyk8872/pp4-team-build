@@ -21,3 +21,5 @@ urlpatterns = [
     path('', include('booking.urls'), name="booking_urls"),
     path('accounts', include('allauth.urls')),
 ]
+
+handler404 = "team_building.views.page_not_found_view"
