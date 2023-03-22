@@ -24,6 +24,7 @@
   * [Contact](#contact)
   * [Make Review](#make-review)
   * [View Review](#view-review)
+  * [Administration](#administration)
 * [Technologies Used](#technologies-used)
 * [Libraries](#libraries)
 * [Security and Authentification](#security-and-authentification)
@@ -218,6 +219,22 @@ The Indie Flower and the Inknut Antiqua font are used throughout..
 
 * [Back to contents](#table-of-contents)
 ***
+### Administration
+* This function allows the administratior to add/view/delete/edit the users bookings and reviews.<br>
+* View/delete bookings.<br>
+![All bookings](static/images/all_bookings.png)<br>
+* Add a booking.<br>
+![Add bookings](static/images/add_booking.png)<br>
+* Edit a booking.<br>
+![Edit a booking](static/images/single_booking.png)<br>
+* View/delete reviewss.<br>
+![All review](static/images/all_reviews.png)<br>
+* Add a review.<br>
+![Add review](static/images/add_review.png)<br>
+* Edit a review.<br>
+![Edit a review](static/images/single_review.png)<br>
+* [Back to contents](#table-of-contents)
+
 ### Contact 
 * The Contact option alows the user to contact the site owners.
 * This is achieved through the backend.
@@ -318,7 +335,7 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 
 * The site navigation was tested on all sizes via Google Chrome Dev Tools.<br>
 ![Navigation](static/images/navigation.png)<br>
-![Footer](static/images/footer.png)<br>
+![Footer](static/images/footer2.png)<br>
 * [Back to contents](#table-of-contents)
 
 ### Login/Logout/Register
@@ -340,7 +357,7 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 ![Contact](static/images/contactm.png)<br>
 
 ### Review
-* This is a review form to pot your opinion.<br>
+* This is a review form to post your opinion/review.<br>
 ![Contact](static/images/reviewm.png)<br>
 
 ***

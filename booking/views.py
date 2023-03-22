@@ -89,7 +89,7 @@ def make_review(request):
             messages.success(
                 request, 'Review posted. Wait for approval.'
                 )
-            return redirect('make_review')
+            return redirect('home')
 
     else:
         form = ReviewForm()
