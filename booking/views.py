@@ -11,12 +11,17 @@ from django.template.loader import render_to_string
 
 
 class HomePage(TemplateView):
+    """
+    View to render homepage.
+    """
     template_name = "index.html"
 
 
 @login_required
 def make_booking(request):
-
+    """
+    View to render the create a booking page.
+    """
     if request.method == 'POST':
         booking = Booking(user=request.user)
         form = BookingForm(request.POST, instance=booking)
@@ -32,7 +37,9 @@ def make_booking(request):
 
 @login_required
 def view_booking(request):
-
+    """
+    View to render the view all bookings page.
+    """
     bookings = request.user.bookings.all()
     context = {
         'bookings': bookings,
@@ -42,6 +49,9 @@ def view_booking(request):
 
 @login_required
 def edit_booking(request, booking_id):
+    """
+    View to render to view to edit a booking
+    """
     try:
         booking = get_object_or_404(Booking, id=booking_id)
         if request.method == 'POST':
@@ -65,6 +75,9 @@ def edit_booking(request, booking_id):
 
 @login_required
 def delete_booking(request, booking_id):
+    """
+    View to render the page to delete a booking.
+    """
     item = get_object_or_404(Booking, id=booking_id)
     if request.method == 'POST':
         item.delete()
@@ -79,7 +92,7 @@ def delete_booking(request, booking_id):
 @login_required
 def make_review(request):
     """
-    Displays the review form is user is authorised.
+    Displays the review form if user is authorised.
     """
     if request.method == 'POST':
         review = Review(user=request.user)
@@ -101,6 +114,9 @@ def make_review(request):
 
 
 def show_review(request):
+    """
+    Displays the reviews.
+    """
     reviews = Review.objects.all().order_by('-creation_date')
     context = {
         'reviews': reviews,
@@ -109,6 +125,9 @@ def show_review(request):
 
 
 def contact(request):
+    """
+    Displays the contact form.
+    """
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
