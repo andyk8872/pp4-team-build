@@ -32,6 +32,7 @@
   * [Manual Testing](#manual-testing)
     
 * [Bugs](#bugs)
+* [Credits](#credits)
 * [Deployment](#deployment)
 * [Credits](#credits)
    * [Code and Tutorials](#code-and-tutorials)
@@ -384,6 +385,28 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 
 ***
 ## Bugs
+### Solved
+* There was a serious issue with making a booking in that it would accept a booking.<br>
+  The solution was to make certain fields 'required' such as the contact name, email field, phone and booking date.
+* The reviews would not display with the most recent first.<br>
+  The solution was to change the  show review function in the view.py file using the 'order_by' in the queryset.
+* It was possible to submit an empty review. </br>
+  The solution was to set the field to required in the form using a widget.     
+
+* [Back to contents](#table-of-contents)
+***
+## Credits
+* [Stackoverflow(answer from 'JCJS')](https://stackoverflow.com/questions/18676156) - How to use the 'choices' field option.
+* [Stackoverflow(answer from 'htgull')](https://stackoverflow.com/questions/5959462) -  'verbose names'-For using human names is models.
+* [Stackoverflow(answer from '')](https://stackoverflow.com/questions/44022056) - Sets a constraint/validatior for the number of participants.
+* [Contact forms/django('Youtube with Stein')](https://www.youtube.com/watch?v=dnhEnF7_RyM) - Creating backend contact form in django.
+
+### A number of project from Code Institute Peer Code Review.
+* [Peer code review/Code Instute(Dirk Ornee)](https://stackoverflow.com/questions/44022056) - To see how the README.md file was structured.
+* [Peer code review/Code Instute(spangen87)](https://github.com/spangen87/locksmith-booking) - To visualise a booking website and its stucture.
+
+* [Back to contents](#table-of-contents)
+***
 ## Deployment
 
 * [Back to contents](#table-of-contents)
