@@ -8,7 +8,9 @@ from datetime import timedelta, date
 
 
 class Booking(models.Model):
-
+    """
+    Creates a model for a booking
+    """
     ACTIVITY_LIST = (
         ('Team Building Workshop', 'Team Building Workshop'),
         ('Carnival Team Challenge', 'Carnival Team Challenge'),
@@ -70,7 +72,9 @@ class Booking(models.Model):
 
 
 class Review(models.Model):
-
+    """
+    Creates a model for a booking
+    """
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
