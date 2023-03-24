@@ -31,7 +31,7 @@
 * [Testing](#testing)
   * [Manual Testing](#manual-testing)
     
-  * [Bugs](#bugs)
+* [Bugs](#bugs)
 * [Deployment](#deployment)
 * [Credits](#credits)
    * [Code and Tutorials](#code-and-tutorials)
@@ -383,6 +383,7 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 ![Contact](static/images/reviewm.png)<br>
 
 ***
+## Bugs
 ## Deployment
 
 * [Back to contents](#table-of-contents)
