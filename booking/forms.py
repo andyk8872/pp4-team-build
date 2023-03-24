@@ -4,12 +4,16 @@ import datetime
 
 
 class DateInput(forms.DateInput):
-
+    """
+    Class to make a calender showing when choosing the date.
+    """
     input_type = 'date'
 
 
 class BookingForm(forms.ModelForm):
-
+    """
+    Presents the form with the fields and widgets/validators.
+    """
     class Meta:
         model = Booking
         fields = ('contact_name',
