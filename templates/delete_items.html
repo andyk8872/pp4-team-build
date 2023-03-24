@@ -14,10 +14,10 @@
       <div class="col-md-4 mt-3 mb-3 offset-md-4 text-center">
           <form method="post" style="margin-top: 1.3em;">             
               {% csrf_token %}
-              <h3 class="text-white">Are you sure you want to delete booking made by: {{ booking.contact_name }}</h1>
+              <h3 class="text-white">Are you sure you want to delete booking made for: {{ booking.booking_date }}</h1>
               <br>
-              <input type="submit" class="btn btn-warning btn-signup" value="Yes" />              
-              <a href="/my_account"><div class="btn btn-primary">Cancel</div></a>          
+              <input type="submit" class="btn btn-warning btn-signup btn-lg" value="  Yes  " />              
+              <a href="/my_account"><div class="btn btn-primary btn-lg">Cancel</div></a>          
           </form>
       </div>
 

@@ -99,9 +99,30 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 
 * Although not specially designed for this the project board in github works well enabling me to track my user stories.
 * This enabled me to manage the project by breaking it up into several phases.
-*  Once the project had started it allowed me to cycle through the process to planning, executing and evaluating. 
+* Once the project had started it allowed me to cycle through the process to planning, executing and evaluating.
+* The framework used is the Kanban board - a form of visual project management. 
 
 ### Project Board/User Stories:
+<details><summary>Kanban Board:</summary>
+<img src="static/images/user1.png">
+<img src="static/images/user2.png">
+<img src="static/images/user3.png">
+<img src="static/images/user4.png">
+<img src="static/images/user5.png">
+<img src="static/images/user6.png">
+<img src="static/images/user7.png">
+<img src="static/images/user8.png">
+<img src="static/images/user9.png">
+<img src="static/images/user10.png">
+<img src="static/images/user11.png">
+<img src="static/images/user12.png">
+<img src="static/images/user13.png">
+<img src="static/images/user14.png">
+</details>
+<br/>
+
+* [Back to contents](#table-of-contents)
+
 <details><summary>User Stories:</summary>
 <img src="static/images/full_user_stories.png">
 <img src="static/images/agile1.png">
@@ -112,6 +133,7 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 <img src="static/images/agile6.png">
 <img src="static/images/reviews.png">
 <img src="static/images/contact.png">
+<img src="static/images/agile6.png">
 </details>
 <br/>
 
@@ -148,9 +170,9 @@ The Indie Flower and the Inknut Antiqua font are used throughout..
 ***
 
 ## Structure
-### Schema
-### Logic
-### ERD (diagrams)
+### Logic/ERD (diagrams)
+* The logic and the relationships within the database can be seen in the diagram below.
+![ERD](static/images/schema.png)<br>
 
 * [Back to contents](#table-of-contents)
 ***
