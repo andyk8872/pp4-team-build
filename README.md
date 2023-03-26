@@ -101,7 +101,8 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 * Although not specially designed for this the project board in github works well enabling me to track my user stories.
 * This enabled me to manage the project by breaking it up into several phases.
 * Once the project had started it allowed me to cycle through the process to planning, executing and evaluating.
-* The framework used is the Kanban board - a form of visual project management. 
+* The framework used is the Kanban board - a form of visual project management.
+* There was the possibility of having a staff frontend user access. This was was later decided not to be a viable option due to time constraints. 
 
 ### Project Board/User Stories:
 <details><summary>Kanban Board:</summary>
@@ -408,6 +409,42 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 * [Back to contents](#table-of-contents)
 ***
 ## Deployment
+* The app was first created locally  with an initial deployment to Heroku, this was to prevent having to deal with difficulties in relation to deployment at a later stage.
+* At the start an env.py file was created to store passwords and keys private such as postgresql and cloudinary keys.
+### Create Heroku app:
+
+* Login in to Heroku
+* Create a new app.
+* Select "New" and "Create new app".
+* Give the new app a name and click "Create new app".
+* Select a region (Europe for this app).
+
+#### Connect Postgres Database:
+
+* Open your app on the main dashboard of Heroku.
+* Open the Resources tab and scroll to the add-ons section.
+* Type 'Postgres' and select the Heroku Postgres option.
+* Copy the DATABASE_URL in the Config Vars section of the Settings tab.
+* To use the Postgres database in your development environment, copy the DATABASE_URL in your env.py file.
+
+#### Deploy App on Heroku (development stage):
+
+* Click "Settings".
+* Navigate to the "Config Vars" section and click "Reveal Config Vars"
+* Add CLOUDINARY_URL variable
+* Add SECRET_KEY variable.
+* Add DISABLE_COLLECTSTATIC, 1
+* Under "Deployment Method" click on "GitHub" to get access to your repository.
+* Ensured that the name of the app was entered in 'allowed hosts' in settings.py.
+* Created a Procfile with web: gunicorn team_building.wsgi
+* Enable Automatic Deploys" or click "Deploy Branch" to deploy your app.
+
+#### Final Deployment App on Heroku (production stage):
+* In settings.py debug flag to false.
+* Save file, add, commit and push to github.
+* Remove DISABLE_COLLECTSTATIC, 1 in HEROKU config vars.
+* Click deploy branch in HEROKU.
+* Click run app.
 
 * [Back to contents](#table-of-contents)
 ***
