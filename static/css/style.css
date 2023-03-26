@@ -9,6 +9,12 @@ h1, .display-1 {
     letter-spacing: 5px;    
 }
 
+h2 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;    
+    letter-spacing: 5px; 
+}
+
 .white {
     color: #fff;
 }
