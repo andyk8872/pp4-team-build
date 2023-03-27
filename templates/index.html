@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 
@@ -57,51 +58,6 @@
             </div>
         </div>
     </div>
-
-
-    <!-- <div class="container mt-5 mb-5">
-
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card border border-dark">
-                    <img src="https://img.freepik.com/free-photo/creative-business-team-putting-hands-together_1170-1712.jpg?w=1380"
-                        class="card-img-top" alt="Team around table" />
-                    <div class="card-body">
-                        <p class="card-title h5">Team Building Workshop</p>
-                        <p class="card-text">
-                            The idea is to help build connections between
-                            members of a team, create lasting bonds, and enable better teamwork and working
-                            practices.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card border border-dark">
-                    <img src="https://img.freepik.com/premium-photo/funny-kid-clown-against-falling-confetti_411285-141.jpg?w=1380"
-                        class="card-img-top" alt="Clown" />
-                    <div class="card-body">
-                        <h5 class="card-title">Carnival Team Challenge</h5>
-                        <p class="card-text">
-                            The Carnival Challenge is a great one to really get the competitive juices flowing and
-                            has always proved popular with corporates for team building.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card border border-dark">
-                    <img src="https://img.freepik.com/premium-photo/man-walking-suspension-bridge-looking-cloudy-mountains_422666-2151.jpg?w=1380"
-                        class="card-img-top" alt="Man walking on rope bridge" />
-                    <div class="card-body">
-                        <h5 class="card-title">Bridge Building Challenge</h5>
-                        <p class="card-text">The Bridge Challenge is a great one to really get the competitive
-                            juices flowing and has always proved popular with corporates for team building.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 </div>
 
 <!-- about -->
@@ -151,5 +107,7 @@
     </div>
 
 </div>
+
+<script src="{% static 'js/map.js' %}"></script>
 
 {%endblock%}
