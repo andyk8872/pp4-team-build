@@ -188,7 +188,7 @@ The Indie Flower and the Inknut Antiqua font are used throughout..
 
 ### Navigation
 * The Navigation bar gives the user the options/links in order to navigate the site and who is logged on if anyone.. 
-![Navigation](static/images/navigation.png)<br>
+![Navigation](static/images/navbar.png)<br>
 
 ***
 ### Footer
@@ -413,7 +413,7 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 * [Stackoverflow(answer from 'htgull')](https://stackoverflow.com/questions/5959462) -  'verbose names'-For using human names is models.
 * [Stackoverflow(answer from '')](https://stackoverflow.com/questions/44022056) - Sets a constraint/validatior for the number of participants.
 * [Contact forms/django('Youtube with Stein')](https://www.youtube.com/watch?v=dnhEnF7_RyM) - Creating backend contact form in django.
-* [Collectstatis Error('answer from 'Mo Far')](https://stackoverflow.com/questions/36665889) - Removing the 'collectstatic --noinput' error on deployment.
+* [Collectstatic Error('answer from 'Mo Far')](https://stackoverflow.com/questions/36665889) - Removing the 'collectstatic --noinput' error on deployment.
 
 ### A number of projects from Code Institute Peer Code Review were sourced.
 * [Peer code review/Code Instute(Dirk Ornee)](https://stackoverflow.com/questions/44022056) - To see how the README.md file was structured.
