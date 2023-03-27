@@ -58,7 +58,7 @@ The target audience are organisations who have group/groups that they feel would
 
 * [Back to contents](#table-of-contents)
 
-The live website can be found [here](https://andyk8872.github.io/project-2/).
+The live website can be found [here](https://teambuilding.herokuapp.com/).
 
 ## TEAM | BUILD  Responsive Website View
 
@@ -136,6 +136,7 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 <img src="static/images/reviews.png">
 <img src="static/images/contact.png">
 <img src="static/images/agile6.png">
+<img src="static/images/final.png">
 </details>
 <br/>
 
@@ -163,10 +164,10 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 
 ### Color Scheme:
 The colors were chosen to complement each other as well as provide accessiblity.<br>
- ![Color Palete](docs/palete.png)
+ ![Color Palete](static/images/color.png)
 
 ### Typography:
-The Indie Flower and the Inknut Antiqua font are used throughout..
+* The Lato font and the font-family-sans-serif were used throughout the app.
 
 * [Back to contents](#table-of-contents)
 ***
@@ -291,6 +292,7 @@ The Indie Flower and the Inknut Antiqua font are used throughout..
 * [Mailtrap](mailtrap.com) - A mail service used for to hold/store the users details and message when using the contact form.
 * [Leaflet Maps](https://leaflet.js/) - Used to produce a map of the location.
 * [LambdaTest](https://app.lambdatest.com/console/realtime/browser) - Used to test deployed app on different browers.
+* [Color Palate](https://color.adobe.com/create/color-wheel) - Used to create a color palete.
 
 * [Back to contents](#table-of-contents)
 ***
@@ -340,8 +342,11 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 ![Opera](static/images/opera.png)<br>
 
 ### Lighthouse Tests.<br>
-* The preformance percentage was reduced to 92% when the Leaflet Map was not on the page and base.html was looking for it.<br>
+* In desktop the preformance percentage was reduced to 92% when the Leaflet Map was not on the page and base.html was looking for it, this was an error and corrected by creating a seperate map.js file.<br>
 ![Lighthouse](static/images/lighthouse_contact.png)<br>
+
+* In mobile the performance went down to 85% due to the loading of bootstrap css and leaflet maps.<br>
+![Lighthouse](static/images/mobile.png)<br>
 
 ### HTML
 * The errors shown were corrected as can be seen.
@@ -353,12 +358,14 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 * There were no tests to preform on the two javascript functions.
 1. The first is simply a function to retrieve the current year.
 2. The second is a function to retrieve a specific location on a map.
+* This is the result from JSHINT<br>
+ ![Javascript](static/images/jshint.png)<br>
 
 ### Python
 * PEP8 Style guide was used for all python code.
 * All whitespaces, missing newlines and missing docstrings errors were rectified.
 * The CI Python Linter showed no errors.<br>
-![CSS](static/images/python_views.png)<br>
+![Python](static/images/python_views.png)<br>
 
 ***
 
