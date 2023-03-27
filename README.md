@@ -62,7 +62,7 @@ The live website can be found [here](https://andyk8872.github.io/project-2/).
 
 ## TEAM | BUILD  Responsive Website View
 
-![Website Mock Up](docs/responsive.png)
+![Website Mock Up](static/images/response.png)
 
 * [Back to contents](#table-of-contents)
 *** 
@@ -290,6 +290,7 @@ The Indie Flower and the Inknut Antiqua font are used throughout..
 * [drawSQL](https://drawsql.app/) - Used to draw the database schema.
 * [Mailtrap](mailtrap.com) - A mail service used for to hold/store the users details and message when using the contact form.
 * [Leaflet Maps](https://leaflet.js/) - Used to produce a map of the location.
+* [LambdaTest](https://app.lambdatest.com/console/realtime/browser) - Used to test deployed app on different browers.
 
 * [Back to contents](#table-of-contents)
 ***
@@ -333,6 +334,11 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 * [Back to contents](#table-of-contents)
 ***
 ## Testing
+### Responsive Testing
+* Once the app was deployed it was tested on a number of different browsers via 'LambdaTest'<br>
+![Firefox](static/images/firefox.png)<br>
+![Opera](static/images/opera.png)<br>
+
 ### Lighthouse Tests.<br>
 * The preformance percentage was reduced to 92% when the Leaflet Map was not on the page and base.html was looking for it.<br>
 ![Lighthouse](static/images/lighthouse_contact.png)<br>
@@ -351,6 +357,8 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 ### Python
 * PEP8 Style guide was used for all python code.
 * All whitespaces, missing newlines and missing docstrings errors were rectified.
+* The CI Python Linter showed no errors.<br>
+![CSS](static/images/python_views.png)<br>
 
 ***
 
@@ -392,7 +400,11 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 * The reviews would not display with the most recent first.<br>
   The solution was to change the  show review function in the view.py file using the 'order_by' in the queryset.
 * It was possible to submit an empty review. </br>
-  The solution was to set the field to required in the form using a widget.     
+  The solution was to set the field to required in the form using a widget.
+* I was getting the error when trying to deploy 'python manage.py collectstatic --noinput'.
+  The solution was to run 'python3 manage.py collectstatic' from my local server.
+* When I setup a ' bootstrap 5 modal' to confirm a user wanting to delete a booking it always deleted the first/top booking.
+  The solution was to add a confirmation template and redirect the user there.       
 
 * [Back to contents](#table-of-contents)
 ***
@@ -401,8 +413,9 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 * [Stackoverflow(answer from 'htgull')](https://stackoverflow.com/questions/5959462) -  'verbose names'-For using human names is models.
 * [Stackoverflow(answer from '')](https://stackoverflow.com/questions/44022056) - Sets a constraint/validatior for the number of participants.
 * [Contact forms/django('Youtube with Stein')](https://www.youtube.com/watch?v=dnhEnF7_RyM) - Creating backend contact form in django.
+* [Collectstatis Error('answer from 'Mo Far')](https://stackoverflow.com/questions/36665889) - Removing the 'collectstatic --noinput' error on deployment.
 
-### A number of project from Code Institute Peer Code Review.
+### A number of projects from Code Institute Peer Code Review were sourced.
 * [Peer code review/Code Instute(Dirk Ornee)](https://stackoverflow.com/questions/44022056) - To see how the README.md file was structured.
 * [Peer code review/Code Instute(spangen87)](https://github.com/spangen87/locksmith-booking) - To visualise a booking website and its stucture.
 
@@ -411,6 +424,7 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 ## Deployment
 * The app was first created locally  with an initial deployment to Heroku, this was to prevent having to deal with difficulties in relation to deployment at a later stage.
 * At the start an env.py file was created to store passwords and keys private such as postgresql and cloudinary keys.
+
 ### Create Heroku app:
 
 * Login in to Heroku
