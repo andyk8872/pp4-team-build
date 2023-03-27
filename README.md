@@ -1,7 +1,7 @@
 ## [Table of Contents](#table-of-contents)
 * [Purpose](#purpose)
 * [User Experience Design (UX)](#user-experience-design)
-* [User stories](#user-stories)
+  * [User stories](#user-stories)
   * [Site Users](#site-users)
   * [Returning Visitor Goals](#returning-visitor-goals)
   * [Frequent Visitor Goals](#frequent-visitor-goals)
@@ -43,14 +43,14 @@
 ## Purpose:
 ### Goal:
 #### To allow individuals and organisations a place to book a 'Team Building' exercise for themselves and their organisation.
-#### To provide a visual and interactive that the user will be able to fulfil their objectives.
-This is a booking application for 'Team Building' exercises. It is a site where you and your team can book a day on one of the various team building activities. 
-The company will then confirm your booking or call to get additional details and arrange payment.
+#### To provide a visual and interactivity so that the user will be able to fulfil their objectives.
+This is a booking site for 'Team Building' exercises. It is a site where you and your team can book a day on one of the various team building activities. 
+The company will then contact you to confirm your booking to get additional details and arrange payment.
 The application was created with a real need in mind.
 
 ### Business Goals:
 
-The main goal of this project is to give a user the ability to make bookings. User should also should also be able to make updates to their account in via their account.
+The main goal of this project is to give a user the ability to make bookings. User should also should also be able to make updates to their account in via their account. The user should also be able to give a review.
 
 ### Target Audience:
 
@@ -71,25 +71,27 @@ The live website can be found [here](https://teambuilding.herokuapp.com/).
 ### User stories
 #### Site Users
 * As a First Time user, I want to easily understand the main purpose of the site.
-* As a first time user, I want to be able to play the game and participate in the experience.
 * As a First Time user, I want to view the website and content clearly on my mobile device.
 * As a Firt Time user, I want to find to be able to contact the site owners.
-* As a user I can have the ability to request a callback before the visit so that I can give more information and receive information.
+* As a user I can have the ability to request a callback before the visit so that I can give more information and make payment.
+* As a user I can see the various activity options to choose from.
 * As a user I can cancel my booking if I don't need it anymore.
 * As a user I can edit my booking so that I can change time or give more information.
 * As a user I can create an account so that I can see my bookings.
 * As a user I can have confirmation checks in relation to deletion of my bookings.
-* As a user I can see the various activity options to choose from.
+* As a user I can see the address and the location of the venue.
+* As a user I can give a review so that I can share my experience.
 #### Returning Visitor Goals
 * As a Returning user, I want to enjoy the experience and the interactive options .
-* As a Returning user, I want to contact the site owners so I can share my experience.
+* As a Returning user, I want to contact the site owners.
 #### Frequent Visitor Goals
 * As a Frequent user, I want to check to see if there are any changes.
 * As a Frequent user, I want to check to see if there are any new updates.
 #### Staff Memmber
-* As a admin I can see what times have been booked so that I can plan my work.
-* As a admin I can have contact details in relation to the customer.
-* As a admin I can have the ability to confirm bookings.
+* As a administrator I can see what times have been booked so that I can plan my work.
+* As a administrator I can have contact details in relation to the customer.
+* As a administrator I can have the ability to confirm bookings and payment.
+* As a administrator I can have the ability to approve reviews.
 
 * [Back to contents](#table-of-contents)
 ***
@@ -292,7 +294,7 @@ The colors were chosen to complement each other as well as provide accessiblity.
 * [Mailtrap](mailtrap.com) - A mail service used for to hold/store the users details and message when using the contact form.
 * [Leaflet Maps](https://leaflet.js/) - Used to produce a map of the location.
 * [LambdaTest](https://app.lambdatest.com/console/realtime/browser) - Used to test deployed app on different browers.
-* [Color Palate](https://color.adobe.com/create/color-wheel) - Used to create a color palete.
+* [Color Adobe](https://color.adobe.com/create/color-wheel) - Used to create a color palete.
 
 * [Back to contents](#table-of-contents)
 ***
