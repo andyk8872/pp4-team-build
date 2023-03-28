@@ -18,11 +18,11 @@
   {% if booking.approved is True %}
 
   <div class="row">
-    <div class="col-md-8 mt-3 info mb-3 offset-md-2">      
+    <div class="col-md-8 mt-3 info mb-3 offset-md-2">
       <h5>Activity Type: {{ booking.activity_type }}</h5>
       <p>Event Date: {{ booking.booking_date }}</p>
       <p>Number in Group: {{ booking.total_no_group }}</p>
-      <p>Date of Booking: {{ booking.creation_date }}</p>      
+      <p>Date of Booking: {{ booking.creation_date }}</p>
       <h5>Contact Name: {{ booking.contact_name }} <span class="btn btn-success btn-sm disabled">Confirmed</span></h5>
     </div>
   </div>
