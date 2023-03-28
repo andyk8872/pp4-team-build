@@ -38,7 +38,7 @@ ALLOWED_HOSTS = ['teambuilding.herokuapp.com', 'localhost']
 # email
 EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
 EMAIL_HOST_USER = 'be6026ad5cd3b6'
-EMAIL_PORT = '587'
+EMAIL_PORT = '2525'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 # Application definition
