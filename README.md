@@ -176,6 +176,7 @@ The colors were chosen to complement each other as well as provide accessiblity.
 
 ## Structure
 ### Logic/ERD (diagrams)
+* There are two models 'Bookings' and 'Reviews'. These both require data to enable the completion of those functions.
 * The logic and the relationships within the database can be seen in the diagram below.
 ![ERD](static/images/schema.png)<br>
 
@@ -273,6 +274,9 @@ The colors were chosen to complement each other as well as provide accessiblity.
 ![Email](static/images/email.png)<br>
 ***
 
+### Features left to be implempented
+* Having a frontend staff administration utility would be a future feature.
+* Allowing the user the ability to delete the reviews they created would also be a future feature. 
 
 ## Technologies Used
 * [Django](https://www.djangoproject.com/) - A high level Python web framework.
@@ -325,10 +329,25 @@ This is a list of libraries used in the project.
 
 * Django's all auth was used for login and sign up functionality.
 * Django's superuser is used to limit access to admin panel.
+* Only a logged on user can make a review.
+* Only a logged on user can make bookings and can only access their own account. 
 
 ### Form Validation
 
 Extensive form validation is used on front end as well as backend.
+* This can be seen in the screenshots provided.
+<details><summary>Form Validation</summary>
+* This is the 'home page' design in the mobile.<br/>
+<img src="static/images/validation1.png"><br/>
+* This is the 'contact page' design in the desktop.<br/>
+<img src="static/images/validation2.png"><br>
+* This is the 'home page' design in the mobile.<br/>
+<img src="static/images/validation3.png"><br/>
+* This is the 'contact page' design in the desktop.<br/>
+<img src="static/images/validation8.png"><br>
+* This is the 'contact page' design in the desktop.<br/>
+<img src="static/images/validation9.png"><br>
+</details>
 
 ### Database Security
 
@@ -404,7 +423,7 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 ***
 ## Bugs
 ### Solved
-* There was a serious issue with making a booking in that it would accept a booking.<br>
+* There was a serious issue with making a booking in that it would accept a  new booking as well as an updated booking without all the fields being populated.<br>
   The solution was to make certain fields 'required' such as the contact name, email field, phone and booking date.
 * The reviews would not display with the most recent first.<br>
   The solution was to change the  show review function in the view.py file using the 'order_by' in the queryset.
@@ -473,6 +492,6 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 ***
 
 ## Acknowledgements
-
+* This website was built as part of the Full Stack Development course from Code Institute. I would like to thank my mentor Ronan McClelland for all his feedback and guidence throughout.
 * [Back to contents](#table-of-contents)
 ***
