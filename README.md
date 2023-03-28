@@ -432,7 +432,8 @@ All secret keys connecting the database and email (Mailtrap) are stored in a env
 * I was getting the error when trying to deploy 'python manage.py collectstatic --noinput'.
   The solution was to run 'python3 manage.py collectstatic' from my local server.
 * When I setup a ' bootstrap 5 modal' to confirm a user wanting to delete a booking it always deleted the first/top booking.
-  The solution was to add a confirmation template and redirect the user there.       
+  The solution was to add a confirmation template and redirect the user there.
+* After deployment when the contact form was sent a 500 server error arose on Heroku this did not happen on local host even when debug was set to false. Due to time constraints the contact form now sends the message to the CLI (console) only. It is thought the issue is related to the port configuration with 'Mailtrap/Heroku'.         
 
 * [Back to contents](#table-of-contents)
 ***
