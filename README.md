@@ -37,7 +37,7 @@
 * [Credits](#credits)
    * [Code and Tutorials](#code-and-tutorials)
 * [Acknoledgements](#acknowledgements)   
-    
+   * [Acknoledgements](#acknowledgements)   
 
 # TEAM | BUILD BOOKING SITE
 ## Purpose:
