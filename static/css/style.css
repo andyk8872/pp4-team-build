@@ -1,6 +1,7 @@
 body {
-    background-color: #1e90ff;
     /* background-color: green; */
+    background: url('../images/background.jpeg') no-repeat center center fixed;
+    background-size: cover;   
 }
 
 h1, .display-1 {
