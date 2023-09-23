@@ -3,7 +3,7 @@
 {% block content %}
 
 <!-- page to show reviews -->
-<p class="display-1 mt-5">Reviews</p>
+<p class="display-1 mt-5 text-dark">Reviews</p>
 
 {% if not reviews %}
 
@@ -15,8 +15,8 @@
 
   {% for review in reviews %}
   {% if review.approved  %}
-  <div class="card bg-light mb-3 mx-auto" style="max-width: 36rem">
-
+  <div class="card bg-about mb-3 mx-auto border-3" style="max-width: 36rem">
+    {% comment %} <div class="card bg-light mb-3 mx-auto" style="max-width: 36rem"> {% endcomment %}
     <div class="card-body">
       <h5 class="card-text">"{{ review.review }}"</h5>
       <p class="card-text"><small>Review from: {{ review.user }} on: {{ review.creation_date }}</small></p>
